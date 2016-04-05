@@ -1,0 +1,149 @@
+ 
+/*general stylings */
+ * {
+	background-color: #ebebeb;
+
+	}
+p {
+	text-align: center;
+	font-family: 'Playfair', sans-serif;
+
+}
+body {
+	background-color: #ebebeb;
+}
+
+.textPink {
+	color: #d87487;
+
+}
+
+/*Row Heights What unit should I be using to make this responsive? */  
+.row {
+	padding: 50px 0px;
+}
+
+.row #PhotoThumbnails1 {
+	padding-bottom: 0px;
+}
+#PhotoThumbnails2 {
+	padding-top: 0px;
+}
+
+/*navbar stylings */
+/*doesn't pull left or right on really wide screens don't know why*/
+nav {
+margin: 0 auto;
+/*why doesn't percent height work here?*/
+height: 90px;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+.pull-left {
+	display: inline-block;
+
+}
+
+.pull-left i {
+	color: #d87487;
+	font-size: 20px;
+}
+
+.pull-left p {
+	display: inline-block;
+	font-size: 20px;
+	font-family: 'Satisfy', cursive;
+	padding-left: 4px;
+}
+/*
+nav ul {
+	padding-top: 40px;
+
+}
+*/
+
+
+/*hr stylings */
+hr {
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    width: 95%;
+}
+
+/*title styling */
+#Heading {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*photo call out */
+.well {
+	margin: 0px 30px;
+	background: url(../images/cta.jpg) no-repeat center center;
+	height: 300px;
+}
+
+
+/*about me section */
+#AboutMe {
+	text-align: center;
+}
+
+/*I want to put a little padding on the sides having trouble doing so without adding empty columns*/
+.aboutMe p {
+	padding left: 20px;
+}
+
+
+/*Photo thumbnails section */
+#PhotoThumbnails1,
+#PhotoThumbnails2 {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.box1 h4{
+	margin-top: 0;
+	background-image: url("images/sunset1.jpg");
+}
+.box1,	
+.box1 h4,
+.box1 p 	{
+	border: 1px #fff;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: #fff;
+}
+
+.thumbnail{
+    background: #fff;
+    margin-bottom: 0px;
+    border-bottom: none;
+    padding: 0;
+}
+
+#ThankYou {
+	text-align: center;	
+}
+
+@media (max-width: 900px) {
+	#PhotoThumbnails1,
+	#PhotoThumbnails2 {
+		display: none;
+
+	}
+
+footer {
+	background-color: black;
+}
+
+@media (max-width: 800px) {
+	.myFooter {
+		width: 50%;
+	}
+}
+
